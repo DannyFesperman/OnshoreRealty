@@ -77,6 +77,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Search\Logic\Search.vb" />
+    <Compile Include="Search\Logic\Subscribers.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -103,7 +105,8 @@
     <Folder Include="Admin\View Model\" />
     <Folder Include="Login\" />
     <Folder Include="Register\" />
-    <Folder Include="Search\" />
+    <Folder Include="Search\SearchFM\" />
+    <Folder Include="Search\SearchVM\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.vbproj">

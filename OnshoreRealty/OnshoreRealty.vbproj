@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RegisterUser.aspx" />
+    <Content Include="Search.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +114,13 @@
     </Compile>
     <Compile Include="RegisterUser.aspx.vb">
       <DependentUpon>RegisterUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.vb">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.vb">
+      <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -146,12 +154,6 @@
       <Project>{b165ab97-47ce-4def-8f30-9538c390103a}</Project>
       <Name>BLL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-    <Folder Include="Login\" />
-    <Folder Include="Register\" />
-    <Folder Include="Search\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
