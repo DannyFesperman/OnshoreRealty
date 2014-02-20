@@ -98,7 +98,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
+    <Folder Include="Admin\Form Model\" />
+    <Folder Include="Admin\Logic\" />
+    <Folder Include="Admin\View Model\" />
     <Folder Include="Login\" />
     <Folder Include="Register\" />
     <Folder Include="Search\" />
