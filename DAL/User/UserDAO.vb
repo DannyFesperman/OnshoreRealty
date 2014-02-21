@@ -55,4 +55,8 @@ Public Class UserDAO
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@userID", userID)}
         Write("RemoveUser", parameters)
     End Sub
+    Public Function GetUserByEmail(email As String) As User
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@email", email)}
+        Return ReadUsers("GetUserEmail", parameters).SingleOrDefault()
+    End Function
 End Class
