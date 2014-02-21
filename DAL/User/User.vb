@@ -35,12 +35,12 @@
         End Set
     End Property
     Private m_email As String
-    Private Property password() As String
+    Public Property password() As String
         Get
             Return m_password
         End Get
         Set(value As String)
-            m_password = Value
+            m_password = value
         End Set
     End Property
     Private m_password As String
