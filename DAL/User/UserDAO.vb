@@ -47,6 +47,10 @@ Public Class UserDAO
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password)}
         Write("CreateUser", parameters)
     End Sub
+    Public Sub UpdateUser(user As User)
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@userID", user.userID), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password)}
+        Write("UpdateUser", parameters)
+    End Sub
     Public Sub RemoveUser(userID As Integer)
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@userID", userID)}
         Write("RemoveUser", parameters)
