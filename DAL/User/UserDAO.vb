@@ -1,3 +1,47 @@
-﻿Public Class UserDAO
+﻿Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
+Imports System.Data.SqlClient
+
+Public Class UserDAO
+    Public Sub Write(statement As String, parameters As SqlParameter())
+        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
+            connection.Open()
+            Using command As New SqlCommand(statement, connection)
+                command.CommandType = System.Data.CommandType.StoredProcedure
+                command.Parameters.AddRange(parameters)
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+    End Sub
+    Public Function ReadUsers(statement As String, parameters As SqlParameter()) As List(Of User)
+        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
+            connection.Open()
+            Using command As New SqlCommand(statement, connection)
+                command.CommandType = System.Data.CommandType.StoredProcedure
+                If parameters IsNot Nothing Then
+                    command.Parameters.AddRange(parameters)
+                End If
+                Dim data As SqlDataReader = command.ExecuteReader()
+                Dim users As New List(Of User)()
+                While data.Read()
+                    Dim user As New User()
+                    user.userID = Convert.ToInt32(data("userID"))
+                    user.firstName = data("firstName").ToString()
+                    user.lastName = data("lastName").ToString()
+                    user.email = data("email").ToString()
+                    user.password = data("password").ToString()
+                    users.Add(user)
+                End While
+                Try
+                    Return users
+                Catch generatedExceptionName As Exception
+                    Return Nothing
+                End Try
+            End Using
+        End Using
+    End Function
 
 End Class
