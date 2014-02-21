@@ -55,7 +55,17 @@ Public Class UserDAO
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@userID", userID)}
         Write("RemoveUser", parameters)
     End Sub
-    Public Function GetUserByEmail(email As String) As User
+    Public Function GetUserID(userID As Integer) As User
+        Try
+            Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@userID", userID)}
+            Return ReadUsers("GetUserID", parameters).SingleOrDefault()
+        Catch e As Exception
+            Console.WriteLine("Error: " & vbLf + e.Message)
+            Console.ReadKey()
+            Return Nothing
+        End Try
+    End Function
+    Public Function GetUserEmail(email As String) As User
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@email", email)}
         Return ReadUsers("GetUserEmail", parameters).SingleOrDefault()
     End Function
