@@ -40,5 +40,7 @@ Public Class StateDAO
             End Using
         End Using
     End Function
-
+    Public Function GetStates() As List(Of State)
+        Return ReadState("GetState", nothing)
+    End Function
 End Class
