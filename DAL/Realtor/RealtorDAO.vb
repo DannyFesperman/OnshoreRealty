@@ -19,8 +19,9 @@ Public Class RealtorDAO
                 Dim realtors As New List(Of Realtor)()
                 While data.Read()
                     Dim realtor As New Realtor()
-                    realtor.realtorID = Convert.ToInt32(data("stateID"))
-                    realtor.name = data("description").ToString()
+                    realtor.realtorID = Convert.ToInt32(data("realtorID"))
+                    realtor.name = data("name").ToString()
+                    realtor.active = Convert.ToBoolean(data("active"))
                     realtors.Add(realtor)
                 End While
                 Try
@@ -31,5 +32,7 @@ Public Class RealtorDAO
             End Using
         End Using
     End Function
-
+    Public Function GetRealtor() As List(Of Realtor)
+        Return ReadRealtor("GetRealtor", Nothing)
+    End Function
 End Class

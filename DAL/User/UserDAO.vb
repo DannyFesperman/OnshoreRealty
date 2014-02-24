@@ -24,6 +24,7 @@ Public Class UserDAO
                     user.lastName = data("lastName").ToString()
                     user.email = data("email").ToString()
                     user.password = data("password").ToString()
+
                     users.Add(user)
                 End While
                 Try
