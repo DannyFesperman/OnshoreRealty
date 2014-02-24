@@ -53,5 +53,4 @@
         End Set
     End Property
     Private m_acceptEmail As Boolean
-
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Model
+﻿Public Class BaseCodeTable
     Public Property description() As String
         Get
             Return m_description
