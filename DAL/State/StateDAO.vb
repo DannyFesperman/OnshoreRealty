@@ -21,6 +21,7 @@ Public Class StateDAO
                     Dim state As New State()
                     state.stateID = Convert.ToInt32(data("stateID"))
                     state.description = data("description").ToString()
+                    state.active = Convert.ToBoolean(data("active"))
                     states.Add(state)
                 End While
                 Try
