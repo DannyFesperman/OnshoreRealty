@@ -32,6 +32,10 @@ Public Class RealtorDAO
             End Using
         End Using
     End Function
+    Public Sub CreateRealtor(realtor As Realtor)
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@name", realtor.name), New SqlParameter("@active", realtor.active)}
+        Write("CreateUser", parameters)
+    End Sub
     Public Function GetRealtor() As List(Of Realtor)
         Return ReadRealtor("GetRealtor", Nothing)
     End Function

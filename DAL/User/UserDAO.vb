@@ -36,7 +36,7 @@ Public Class UserDAO
         End Using
     End Function
     Public Sub CreateUser(user As User)
-        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password)}
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password), New SqlParameter("@acceptEmail", user.acceptEmail)}
         Write("CreateUser", parameters)
     End Sub
     Public Sub UpdateUser(user As User)
