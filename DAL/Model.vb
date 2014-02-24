@@ -1,13 +1,4 @@
-﻿Public Class State
-    Public Property stateID() As Integer
-        Get
-            Return m_stateID
-        End Get
-        Set(value As Integer)
-            m_stateID = value
-        End Set
-    End Property
-    Private m_stateID As Integer
+﻿Public Class Model
     Public Property description() As String
         Get
             Return m_description
@@ -17,4 +8,13 @@
         End Set
     End Property
     Private m_description As String
+    Public Property active() As Boolean
+        Get
+            Return m_active
+        End Get
+        Set(value As Boolean)
+            m_active = value
+        End Set
+    End Property
+    Private m_active As Boolean
 End Class

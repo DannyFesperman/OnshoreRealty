@@ -44,4 +44,14 @@
         End Set
     End Property
     Private m_password As String
+    Public Property acceptEmail() As Boolean
+        Get
+            Return m_acceptEmail
+        End Get
+        Set(value As Boolean)
+            m_acceptEmail = value
+        End Set
+    End Property
+    Private m_acceptEmail As Boolean
+
 End Class
