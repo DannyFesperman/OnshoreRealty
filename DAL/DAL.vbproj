@@ -82,6 +82,7 @@
     <Compile Include="State\StateDAO.vb" />
     <Compile Include="User\User.vb" />
     <Compile Include="User\UserDAO.vb" />
+    <Compile Include="Write.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
