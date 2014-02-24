@@ -78,6 +78,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="State\State.vb" />
+    <Compile Include="State\StateDAO.vb" />
     <Compile Include="User\User.vb" />
     <Compile Include="User\UserDAO.vb" />
   </ItemGroup>
