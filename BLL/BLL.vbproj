@@ -78,6 +78,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Properties\PropertyVM.vb" />
     <Compile Include="Register\RegisterServices.vb" />
     <Compile Include="Register\UserFM.vb" />
     <Compile Include="UserServices\UserServices.vb" />
