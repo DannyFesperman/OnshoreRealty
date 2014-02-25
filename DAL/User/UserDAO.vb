@@ -57,6 +57,9 @@ Public Class UserDAO
             Return Nothing
         End Try
     End Function
+    Public Function GetAllUsers() As List(Of User)
+        Return ReadUsers("GetAllUsers", Nothing)
+    End Function
     Public Function GetUserEmail(email As String) As User
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@email", email)}
         Return ReadUsers("GetUserEmail", parameters).SingleOrDefault()
