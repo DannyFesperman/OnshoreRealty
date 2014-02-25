@@ -6,16 +6,7 @@ Imports System.Threading.Tasks
 Imports System.Data.SqlClient
 
 Public Class UserDAO
-    Public Sub Write(statement As String, parameters As SqlParameter())
-        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
-            connection.Open()
-            Using command As New SqlCommand(statement, connection)
-                command.CommandType = System.Data.CommandType.StoredProcedure
-                command.Parameters.AddRange(parameters)
-                command.ExecuteNonQuery()
-            End Using
-        End Using
-    End Sub
+    Inherits Write
     Public Function ReadUsers(statement As String, parameters As SqlParameter()) As List(Of User)
         Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
             connection.Open()
@@ -33,6 +24,7 @@ Public Class UserDAO
                     user.lastName = data("lastName").ToString()
                     user.email = data("email").ToString()
                     user.password = data("password").ToString()
+                    user.acceptEmail = Convert.ToBoolean(data("acceptEmail"))
                     users.Add(user)
                 End While
                 Try
@@ -44,7 +36,7 @@ Public Class UserDAO
         End Using
     End Function
     Public Sub CreateUser(user As User)
-        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password)}
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password), New SqlParameter("@acceptEmail", user.acceptEmail)}
         Write("CreateUser", parameters)
     End Sub
     Public Sub UpdateUser(user As User)
@@ -64,6 +56,9 @@ Public Class UserDAO
             Console.ReadKey()
             Return Nothing
         End Try
+    End Function
+    Public Function GetAllUsers() As List(Of User)
+        Return ReadUsers("GetAllUsers", Nothing)
     End Function
     Public Function GetUserEmail(email As String) As User
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@email", email)}
