@@ -1,13 +1,13 @@
 ﻿Public Class Realtor
-    Public Property realtorID() As String
+    Public Property realtorID() As Integer
         Get
             Return m_realtorID
         End Get
-        Set(value As String)
+        Set(value As Integer)
             m_realtorID = value
         End Set
     End Property
-    Private m_realtorID As String
+    Private m_realtorID As Integer
     Public Property name() As String
         Get
             Return m_name
