@@ -85,10 +85,27 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AddNewProperty.aspx" />
+    <Content Include="Admin\PropertyAdmin.aspx" />
+    <Content Include="RegisterUser.aspx" />
     <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddNewProperty.aspx.designer.vb">
+      <DependentUpon>AddNewProperty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddNewProperty.aspx.vb">
+      <DependentUpon>AddNewProperty.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PropertyAdmin.aspx.designer.vb">
+      <DependentUpon>PropertyAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PropertyAdmin.aspx.vb">
+      <DependentUpon>PropertyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -156,7 +173,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="Login\" />
     <Folder Include="Search\" />
   </ItemGroup>
