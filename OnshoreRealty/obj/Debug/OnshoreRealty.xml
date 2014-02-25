@@ -6,41 +6,42 @@ OnshoreRealty
 </name>
 </assembly>
 <members>
-<member name="F:OnshoreRealty.Login.RadScriptManager1">
+<member name="P:OnshoreRealty.My.MyWebExtension.Computer">
 	<summary>
-RadScriptManager1 control.
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:OnshoreRealty.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:OnshoreRealty.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:OnshoreRealty.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:OnshoreRealty.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:OnshoreRealty.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:OnshoreRealty.Site.form1">
+	<summary>
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Login.email">
+</member><member name="F:OnshoreRealty.Site.ContentPlaceHolder1">
 	<summary>
-email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Login.password">
-	<summary>
-password control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Login.Login">
-	<summary>
-Login control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Login.NewUser">
-	<summary>
-NewUser control.
+ContentPlaceHolder1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -190,17 +191,41 @@ submit control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Site.form1">
+</member><member name="F:OnshoreRealty.Login.RadScriptManager1">
 	<summary>
-form1 control.
+RadScriptManager1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Site.ContentPlaceHolder1">
+</member><member name="F:OnshoreRealty.Login.email">
 	<summary>
-ContentPlaceHolder1 control.
+email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Login.password">
+	<summary>
+password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Login.Login">
+	<summary>
+Login control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Login.NewUser">
+	<summary>
+NewUser control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -278,31 +303,6 @@ Register control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="P:OnshoreRealty.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:OnshoreRealty.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:OnshoreRealty.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:OnshoreRealty.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:OnshoreRealty.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:OnshoreRealty.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
 </member>
 </members>
 </doc>
