@@ -16,7 +16,7 @@ Public Class Register
         user.password = password.Text
         user.confirmPass = confirmPass.Text
         user.acceptsEmail = checkbox.Checked
-        If log.ValidRegister(user) Then
+        If RadCaptcha1.IsValid And log.ValidRegister(user) Then
             log.RegisterUser(user)
         End If
 

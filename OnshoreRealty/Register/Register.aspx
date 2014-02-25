@@ -68,7 +68,7 @@
             </telerik:RadButton>
             <br />
             <br />
-            <telerik:RadCaptcha ID="RadCaptcha1" runat="server" EnableRefreshImage="true"></telerik:RadCaptcha>
+            <telerik:RadCaptcha ID="RadCaptcha1" runat="server" EnableRefreshImage="true" ErrorMessage="Must match image.  Please try again."></telerik:RadCaptcha>
             <telerik:RadButton ID="Register" runat="server" Text="Register" OnClick="Register_Click"></telerik:RadButton>
         </div>
     </form>
