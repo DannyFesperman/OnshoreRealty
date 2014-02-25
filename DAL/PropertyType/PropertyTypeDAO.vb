@@ -5,9 +5,9 @@ Imports System.Text
 Imports System.Threading.Tasks
 Imports System.Data.SqlClient
 
-Public Class StateDAO
+Public Class PropertyTypeDAO
     Inherits Write
-    Public Function ReadState(statement As String, parameters As SqlParameter()) As List(Of State)
+    Public Function ReadType(statement As String, parameters As SqlParameter()) As List(Of PropertyType)
         Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
             connection.Open()
             Using command As New SqlCommand(statement, connection)
@@ -16,23 +16,23 @@ Public Class StateDAO
                     command.Parameters.AddRange(parameters)
                 End If
                 Dim data As SqlDataReader = command.ExecuteReader()
-                Dim states As New List(Of State)()
+                Dim types As New List(Of PropertyType)()
                 While data.Read()
-                    Dim state As New State()
-                    state.stateID = Convert.ToInt32(data("stateID"))
-                    state.description = data("description").ToString()
-                    state.active = Convert.ToBoolean(data("active"))
-                    states.Add(state)
+                    Dim type As New PropertyType()
+                    type.typeID = Convert.ToInt32(data("typeID"))
+                    type.description = data("description").ToString()
+                    type.active = Convert.ToBoolean(data("active"))
+                    types.Add(type)
                 End While
                 Try
-                    Return states
+                    Return types
                 Catch generatedExceptionName As Exception
                     Return Nothing
                 End Try
             End Using
         End Using
     End Function
-    Public Function GetStates() As List(Of State)
-        Return ReadState("GetState", nothing)
+    Public Function GetTypes() As List(Of PropertyType)
+        Return ReadType("GetType", Nothing)
     End Function
 End Class
