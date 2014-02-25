@@ -87,7 +87,7 @@
   <ItemGroup>
     <Content Include="Admin\AddNewProperty.aspx" />
     <Content Include="Admin\PropertyAdmin.aspx" />
-    <Content Include="RegisterUser.aspx" />
+    <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,11 +124,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RegisterUser.aspx.designer.vb">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Register\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegisterUser.aspx.vb">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Register\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
@@ -173,7 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Login\" />
-    <Folder Include="Register\" />
     <Folder Include="Search\" />
   </ItemGroup>
   <PropertyGroup>
