@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Register.aspx.vb" Inherits="OnshoreRealty.Register" %>
+﻿<%@ Page Title="Register" Language="vb" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Register.aspx.vb" Inherits="OnshoreRealty.Register" %>
 
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 

@@ -6,7 +6,7 @@ OnshoreRealty
 </name>
 </assembly>
 <members>
-<member name="F:OnshoreRealty.Register.RadScriptManager1">
+<member name="F:OnshoreRealty.Login.RadScriptManager1">
 	<summary>
 RadScriptManager1 control.
 </summary>
@@ -14,23 +14,7 @@ RadScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Register.firstName">
-	<summary>
-firstName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Register.lastName">
-	<summary>
-lastName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Register.email">
+</member><member name="F:OnshoreRealty.Login.email">
 	<summary>
 email control.
 </summary>
@@ -38,7 +22,7 @@ email control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Register.password">
+</member><member name="F:OnshoreRealty.Login.password">
 	<summary>
 password control.
 </summary>
@@ -46,33 +30,17 @@ password control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Register.confirmPass">
+</member><member name="F:OnshoreRealty.Login.Login">
 	<summary>
-confirmPass control.
+Login control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OnshoreRealty.Register.checkbox">
+</member><member name="F:OnshoreRealty.Login.NewUser">
 	<summary>
-checkbox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Register.RadCaptcha1">
-	<summary>
-RadCaptcha1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OnshoreRealty.Register.Register">
-	<summary>
-Register control.
+NewUser control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -233,6 +201,78 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OnshoreRealty.Site.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.RadScriptManager1">
+	<summary>
+RadScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.firstName">
+	<summary>
+firstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.lastName">
+	<summary>
+lastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.email">
+	<summary>
+email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.password">
+	<summary>
+password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.confirmPass">
+	<summary>
+confirmPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.checkbox">
+	<summary>
+checkbox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.RadCaptcha1">
+	<summary>
+RadCaptcha1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.Register">
+	<summary>
+Register control.
 </summary>
 	<remarks>
 Auto-generated field.

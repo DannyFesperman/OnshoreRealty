@@ -87,6 +87,8 @@
   <ItemGroup>
     <Content Include="Admin\AddNewProperty.aspx" />
     <Content Include="Admin\PropertyAdmin.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Properties\PropertyDetails.aspx" />
     <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -103,6 +105,13 @@
     </Compile>
     <Compile Include="Admin\PropertyAdmin.aspx.vb">
       <DependentUpon>PropertyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -123,6 +132,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\PropertyDetails.aspx.designer.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\PropertyDetails.aspx.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Register\Register.aspx.designer.vb">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -172,7 +188,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Login\" />
     <Folder Include="Search\" />
   </ItemGroup>
   <PropertyGroup>
