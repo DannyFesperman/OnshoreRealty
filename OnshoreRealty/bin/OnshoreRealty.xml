@@ -6,7 +6,23 @@ OnshoreRealty
 </name>
 </assembly>
 <members>
-<member name="F:OnshoreRealty.Register.form1">
+<member name="F:OnshoreRealty.Site.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Site.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OnshoreRealty.Register.form1">
 	<summary>
 form1 control.
 </summary>

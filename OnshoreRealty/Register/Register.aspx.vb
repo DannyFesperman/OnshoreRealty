@@ -10,11 +10,11 @@ Public Class Register
     Protected Sub Register_Click(sender As Object, e As EventArgs)
         Dim log As RegisterServices = New RegisterServices()
         Dim user = New UserFM()
-        user.email = email.ToString
-        user.firstName = firstName.ToString
-        user.lastName = lastName.ToString
-        user.password = password.ToString
-        user.confirmPass = confirmPass.ToString
+        user.email = email.Text
+        user.firstName = firstName.Text
+        user.lastName = lastName.Text
+        user.password = password.Text
+        user.confirmPass = confirmPass.Text
         user.acceptsEmail = checkbox.Checked
         If log.ValidRegister(user) Then
             log.RegisterUser(user)

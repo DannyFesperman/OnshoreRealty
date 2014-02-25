@@ -14,7 +14,8 @@ Public Class UserServices
         user.lastName = userFm.lastName
         user.email = userFm.email
         user.password = userFm.password
-        user.acceptsEmail = userFm.acceptsEmail
+        user.acceptEmail = userFm.acceptsEmail
+        Return user
     End Function
 
 End Class
