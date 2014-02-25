@@ -1,4 +1,4 @@
-﻿Public Class PropertyType
+﻿Public Class SortType
     Inherits BaseCodeTable
     Public Property typeID() As Integer
         Get

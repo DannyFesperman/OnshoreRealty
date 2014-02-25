@@ -87,7 +87,9 @@
   <ItemGroup>
     <Content Include="Admin\AddNewProperty.aspx" />
     <Content Include="Admin\PropertyAdmin.aspx" />
-    <Content Include="RegisterUser.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Properties\PropertyDetails.aspx" />
+    <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +105,13 @@
     </Compile>
     <Compile Include="Admin\PropertyAdmin.aspx.vb">
       <DependentUpon>PropertyAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -124,11 +133,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RegisterUser.aspx.designer.vb">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Properties\PropertyDetails.aspx.designer.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegisterUser.aspx.vb">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Properties\PropertyDetails.aspx.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Register\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
@@ -172,8 +188,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Login\" />
-    <Folder Include="Register\" />
     <Folder Include="Search\" />
   </ItemGroup>
   <PropertyGroup>
