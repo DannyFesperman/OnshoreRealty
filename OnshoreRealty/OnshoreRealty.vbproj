@@ -88,6 +88,7 @@
     <Content Include="Admin\AddNewProperty.aspx" />
     <Content Include="Admin\PropertyAdmin.aspx" />
     <Content Include="Login\Login.aspx" />
+    <Content Include="Properties\PropertyDetails.aspx" />
     <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -131,6 +132,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\PropertyDetails.aspx.designer.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\PropertyDetails.aspx.vb">
+      <DependentUpon>PropertyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Register\Register.aspx.designer.vb">
       <DependentUpon>Register.aspx</DependentUpon>
