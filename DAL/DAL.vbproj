@@ -87,6 +87,7 @@
     <Compile Include="State\State.vb" />
     <Compile Include="State\StateDAO.vb" />
     <Compile Include="StatusType\StatusType.vb" />
+    <Compile Include="StatusType\StatusTypeDAO.vb" />
     <Compile Include="User\User.vb" />
     <Compile Include="User\UserDAO.vb" />
     <Compile Include="Write.vb" />
