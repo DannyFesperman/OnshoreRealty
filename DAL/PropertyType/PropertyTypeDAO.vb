@@ -8,7 +8,7 @@ Imports System.Data.SqlClient
 Public Class PropertyTypeDAO
     Inherits Write
     Public Function ReadType(statement As String, parameters As SqlParameter()) As List(Of PropertyType)
-        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
+        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore Realty;Integrated Security=SSPI;")
             connection.Open()
             Using command As New SqlCommand(statement, connection)
                 command.CommandType = System.Data.CommandType.StoredProcedure
