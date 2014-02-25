@@ -77,6 +77,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Register\RegisterServices.vb" />
+    <Compile Include="Register\UserFM.vb" />
+    <Compile Include="UserServices\UserServices.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -102,7 +105,6 @@
     <Folder Include="Admin\Logic\" />
     <Folder Include="Admin\View Model\" />
     <Folder Include="Login\" />
-    <Folder Include="Register\" />
     <Folder Include="Search\" />
   </ItemGroup>
   <ItemGroup>
