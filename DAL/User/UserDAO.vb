@@ -24,6 +24,7 @@ Public Class UserDAO
                     user.lastName = data("lastName").ToString()
                     user.email = data("email").ToString()
                     user.password = data("password").ToString()
+                    user.acceptEmail = Convert.ToBoolean(data("acceptEmail"))
                     users.Add(user)
                 End While
                 Try
@@ -35,7 +36,7 @@ Public Class UserDAO
         End Using
     End Function
     Public Sub CreateUser(user As User)
-        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password)}
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@firstName", user.firstName), New SqlParameter("@lastName", user.lastName), New SqlParameter("@email", user.email), New SqlParameter("@password", user.password), New SqlParameter("@acceptEmail", user.acceptEmail)}
         Write("CreateUser", parameters)
     End Sub
     Public Sub UpdateUser(user As User)
@@ -55,6 +56,9 @@ Public Class UserDAO
             Console.ReadKey()
             Return Nothing
         End Try
+    End Function
+    Public Function GetAllUsers() As List(Of User)
+        Return ReadUsers("GetAllUsers", Nothing)
     End Function
     Public Function GetUserEmail(email As String) As User
         Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@email", email)}
