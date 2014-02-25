@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="PropertyType\PropertyType.vb" />
     <Compile Include="PropertyType\PropertyTypeDAO.vb" />
+    <Compile Include="Property\Properties.vb" />
     <Compile Include="Realtor\Realtor.vb" />
     <Compile Include="Realtor\RealtorDAO.vb" />
     <Compile Include="State\State.vb" />
