@@ -81,6 +81,7 @@
     <Compile Include="PropertyType\PropertyType.vb" />
     <Compile Include="PropertyType\PropertyTypeDAO.vb" />
     <Compile Include="Property\Properties.vb" />
+    <Compile Include="Property\PropertiesDAO.vb" />
     <Compile Include="Realtor\Realtor.vb" />
     <Compile Include="Realtor\RealtorDAO.vb" />
     <Compile Include="SortType\SortType.vb" />
