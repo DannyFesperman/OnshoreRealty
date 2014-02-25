@@ -78,6 +78,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PropertyType\PropertyTypeDAO.vb" />
     <Compile Include="Realtor\Realtor.vb" />
     <Compile Include="State\State.vb" />
     <Compile Include="State\StateDAO.vb" />
