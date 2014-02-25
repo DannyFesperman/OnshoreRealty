@@ -5,9 +5,9 @@ Imports System.Text
 Imports System.Threading.Tasks
 Imports System.Data.SqlClient
 
-Public Class StateDAO
+Public Class RealtorDAO
     Inherits Write
-    Public Function ReadState(statement As String, parameters As SqlParameter()) As List(Of State)
+    Public Function ReadRealtor(statement As String, parameters As SqlParameter()) As List(Of Realtor)
         Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
             connection.Open()
             Using command As New SqlCommand(statement, connection)
@@ -16,23 +16,27 @@ Public Class StateDAO
                     command.Parameters.AddRange(parameters)
                 End If
                 Dim data As SqlDataReader = command.ExecuteReader()
-                Dim states As New List(Of State)()
+                Dim realtors As New List(Of Realtor)()
                 While data.Read()
-                    Dim state As New State()
-                    state.stateID = Convert.ToInt32(data("stateID"))
-                    state.description = data("description").ToString()
-                    state.active = Convert.ToBoolean(data("active"))
-                    states.Add(state)
+                    Dim realtor As New Realtor()
+                    realtor.realtorID = Convert.ToInt32(data("realtorID"))
+                    realtor.name = data("name").ToString()
+                    realtor.active = Convert.ToBoolean(data("active"))
+                    realtors.Add(realtor)
                 End While
                 Try
-                    Return states
+                    Return realtors
                 Catch generatedExceptionName As Exception
                     Return Nothing
                 End Try
             End Using
         End Using
     End Function
-    Public Function GetStates() As List(Of State)
-        Return ReadState("GetState", nothing)
+    Public Sub CreateRealtor(realtor As Realtor)
+        Dim parameters As SqlParameter() = New SqlParameter() {New SqlParameter("@name", realtor.name), New SqlParameter("@active", realtor.active)}
+        Write("CreateUser", parameters)
+    End Sub
+    Public Function GetRealtor() As List(Of Realtor)
+        Return ReadRealtor("GetRealtor", Nothing)
     End Function
 End Class
