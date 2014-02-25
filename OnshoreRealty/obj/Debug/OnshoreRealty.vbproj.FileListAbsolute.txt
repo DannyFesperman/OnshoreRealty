@@ -42,3 +42,6 @@ C:\Users\admin2\Desktop\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.pdb
 C:\Users\admin2\Desktop\OnshoreRealty\OnshoreRealty\bin\DAL.dll
 C:\Users\admin2\Desktop\OnshoreRealty\OnshoreRealty\bin\DAL.pdb
 C:\Users\admin2\Desktop\OnshoreRealty\OnshoreRealty\bin\DAL.xml
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\DAL.dll
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\DAL.pdb
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\DAL.xml
