@@ -17,5 +17,13 @@
         End Set
     End Property
     Private m_name As String
-
+    Public Property active() As Boolean
+        Get
+            Return m_active
+        End Get
+        Set(value As Boolean)
+            m_active = value
+        End Set
+    End Property
+    Private m_active As Boolean
 End Class
