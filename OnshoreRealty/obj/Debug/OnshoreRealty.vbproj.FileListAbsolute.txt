@@ -9,3 +9,18 @@ c:\users\admin\documents\visual studio 2012\Projects\OnshoreRealty\OnshoreRealty
 c:\users\admin\documents\visual studio 2012\Projects\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.dll
 c:\users\admin\documents\visual studio 2012\Projects\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.xml
 c:\users\admin\documents\visual studio 2012\Projects\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.pdb
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\OnshoreRealty.dll.config
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\OnshoreRealty.dll
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\OnshoreRealty.pdb
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\OnshoreRealty.xml
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\BLL.dll
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\Telerik.Web.UI.dll
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\BLL.pdb
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\BLL.xml
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\bin\Telerik.Web.UI.xml
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.vbprojResolveAssemblyReference.cache
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.Resources.resources
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.vbproj.GenerateResource.Cache
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.dll
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.xml
+C:\Users\Admin\OnshoreRealty\OnshoreRealty\obj\Debug\OnshoreRealty.pdb

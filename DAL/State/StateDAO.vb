@@ -8,7 +8,7 @@ Imports System.Data.SqlClient
 Public Class StateDAO
     Inherits Write
     Public Function ReadState(statement As String, parameters As SqlParameter()) As List(Of State)
-        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore_Realty;Integrated Security=SSPI;")
+        Using connection As New SqlConnection("Data Source=.\SQLEXPRESS;Initial Catalog=Onshore Realty;Integrated Security=SSPI;")
             connection.Open()
             Using command As New SqlCommand(statement, connection)
                 command.CommandType = System.Data.CommandType.StoredProcedure
