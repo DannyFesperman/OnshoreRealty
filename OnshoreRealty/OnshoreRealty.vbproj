@@ -87,7 +87,6 @@
   <ItemGroup>
     <Content Include="Admin\AddNewProperty.aspx" />
     <Content Include="Admin\PropertyAdmin.aspx" />
-    <Content Include="RegisterUser.aspx" />
     <Content Include="Register\Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
